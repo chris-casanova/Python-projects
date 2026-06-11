@@ -1,0 +1,78 @@
+{
+  "casos_de_prueba": [
+    {
+      "id": 1,
+      "descripcion": "Noche de viernes, aeropuerto, lluvia — máximo recargos",
+      "input": {
+        "hora": 23,
+        "dia": "viernes",
+        "llueve": true,
+        "distancia_km": 8.5,
+        "zona": "aeropuerto"
+      },
+      "resultado_esperado": {
+        "tarifa_final": 100.75
+      }
+    },
+    {
+      "id": 2,
+      "descripcion": "Hora pico mañana, día laboral, sin lluvia, zona normal",
+      "input": {
+        "hora": 8,
+        "dia": "lunes",
+        "llueve": false,
+        "distancia_km": 5.0,
+        "zona": "normal"
+      },
+      "resultado_esperado": {
+        "tarifa_base": 27.5,
+        "recargos": ["hora pico +25%"],
+        "tarifa_final": 34.38
+      }
+    },
+    {
+      "id": 3,
+      "descripcion": "Fin de semana tarde, lluvia, centro histórico",
+      "input": {
+        "hora": 15,
+        "dia": "sabado",
+        "llueve": true,
+        "distancia_km": 3.0,
+        "zona": "centro"
+      },
+      "resultado_esperado": {
+        "tarifa_final": 23.12
+      }
+    },
+    {
+      "id": 4,
+      "descripcion": "Mediodía entre semana, sin recargos",
+      "input": {
+        "hora": 12,
+        "dia": "miercoles",
+        "llueve": false,
+        "distancia_km": 10.0,
+        "zona": "normal"
+      },
+      "resultado_esperado": {
+        "tarifa_base": 40.0,
+        "recargos": [],
+        "tarifa_final": 40.0
+      }
+    },
+    {
+      "id": 5,
+      "descripcion": "Viaje largo — activa descuento por excedente de $200",
+      "input": {
+        "hora": 23,
+        "dia": "sabado",
+        "llueve": true,
+        "distancia_km": 30.0,
+        "zona": "aeropuerto"
+      },
+      "resultado_esperado": {
+        "tarifa_final": 189.5
+      }
+    }
+  ]
+}
