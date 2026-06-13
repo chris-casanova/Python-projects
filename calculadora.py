@@ -8,7 +8,7 @@ def add(a, b):
 
 def subtract(a, b):
     return a - b
-
+# La función de multiplicación también acepta 'x' como operador para mayor flexibilidad                
 
 def multiply(a, b):
     return a * b
