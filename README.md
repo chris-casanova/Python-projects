@@ -22,4 +22,3 @@ Includes schema creation, JOINs, filters, and multi-table queries.
 - [ ] API Testing with requests
 - [ ] CI/CD with GitHub Actions
 
-## 📬 Open to remote opportunities
