@@ -1,4 +1,5 @@
-print("dame un numero entero positivo:"); n = int(input())
+#print("dame un numero entero positivo:"); n = int(input())
+n = int(input("dame un numero entero positivo: "))
 
 if isinstance(n, int) and n >= 0:
     x = 0 
