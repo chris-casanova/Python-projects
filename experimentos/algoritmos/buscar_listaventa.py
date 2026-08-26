@@ -7,7 +7,7 @@ while True:
 
         search_value = input("Ingrese el valor que desea buscar en la lista de ventas o \"q\" para salir: ")
         
-        if search_value == "q":
+        if search_value.lower() == "q":
             break
         found = False #variable bandera
 
