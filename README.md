@@ -1,6 +1,6 @@
 # 🧪 QA Automation — Learning Portfolio
 
-Self-taught QA Automation Engineer in training.  
+QA Automation Engineer in training.  
 Background in business & sales — now building automation skills to break into remote tech roles.
 
 ## 🛠️ Stack
